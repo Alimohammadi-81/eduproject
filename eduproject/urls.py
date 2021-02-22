@@ -19,7 +19,9 @@ from homepage import views
 from django.conf.urls import include
 
 urlpatterns = [
-    path('',views.index, name = 'index'),
+    # path('',views.index, name = 'index'),
+    path('',views.sample, name = 'sample'),
+    path('help/',include('help.urls')),
     path('desc/',include('coursedescript.urls')),
     path('admin/', admin.site.urls),
 ]

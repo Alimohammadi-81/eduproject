@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>sample page</title>
+  </head>
+  <link rel="stylesheet" href="{%static "CSS/mystyle.css"%}"/>
+  <body>
+    <img src = {% static "image/start.jpg"%} >
+    <h1>this is context from temlate folder!</h1>
+    {{insert_me}}
+  </body>
+</html>
