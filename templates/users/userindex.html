@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>userinfo</title>
+  </head>
+  <body>
+    {% if info %}
+      <h2>here are the users Inormations:</h2>
+      <ol>
+        {% for item in info %}
+          <li><em>User Info:</em></li>
+          <ul>
+            <li><h5>First Name:{{item.First_name}}</h5></li>
+            <li><h5>Last Name:{{item.Last_name}}</h5></li>
+            <li><h5>Email Address:{{item.mail}}</h5></li>
+          </ul>
+        {% endfor %}
+      </ol>
+    {% else %}
+      <h2>there is no log!</h2>
+    {% endif %}
+  </body>
+</html>
